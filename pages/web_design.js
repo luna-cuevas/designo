@@ -13,17 +13,17 @@ const web_design_data = [
 const web_design = () => {
   return (
     <div className='text-white'>
-      <div className='w-full bg-[#E7816B] relative overflow-hidden p-5 m-auto sm:h-[250px] sm:w-3/4 sm:rounded-xl'>
+      <div className='w-full bg-[#E7816B] relative overflow-hidden p-5 m-auto md:h-[250px] md:w-3/4 md:rounded-xl'>
         <img className='absolute w-1/2' src="/images/bg-pattern-small-circle.svg" alt="" />
         <div className='w-11/12 p-10 m-auto text-center'>
           <h1 className='mb-5 text-4xl'>Web Design</h1>
-          <p className='sm:w-1/2 sm:m-auto'>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
+          <p className='md:w-1/2 md:m-auto'>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
         </div>
       </div>
-      <div className='flex sm:w-3/4 flex-wrap justify-center m-auto'>
+      <div className='flex md:w-3/4 flex-wrap justify-center m-auto'>
         {web_design_data.map(item => {
           return (
-            <div className='p-5 flex sm:w-1/3'>
+            <div className='p-5 flex md:w-1/3'>
               <a className='cursor-grab group'>
                 <div className='h-[478px] w-[350px] bg-[#FDF3F0] hover:bg-[#E7816B] text-center rounded-xl'>
                   <img className='rounded-xl w-fit' src={item.image} alt="" />
@@ -36,9 +36,9 @@ const web_design = () => {
         })}
       </div>
       
-      <div className='flex flex-wrap sm:flex-nowrap sm:w-4/5 justify-center h-[650px] sm:h-[350px] overflow-hidden m-auto sm:justify-between mt-20'>
+      <div className='flex flex-wrap md:flex-nowrap md:w-4/5 justify-center h-[650px] md:h-[350px] overflow-hidden m-auto md:justify-between mt-20'>
         <Link href='/app_design'>
-          <div className='cursor-pointer w-full sm:w-1/2 m-5 bg-[url("/images/image-app-design.jpg")] bg-no-repeat bg-cover rounded-xl flex'>
+          <div className='cursor-pointer w-full md:w-1/2 m-5 bg-[url("/images/image-app-design.jpg")] bg-no-repeat bg-cover rounded-xl flex'>
               <div className='w-fit h-fit m-auto text-white text-center'>
                 <h1 className='text-5xl tracking-[2px]'>APP DESIGN</h1>
                 <p className='text-1xl tracking-[5px]'>VIEW PROJECTS</p>
@@ -46,7 +46,7 @@ const web_design = () => {
           </div>
         </Link>
         <Link href='/graphic_design'>
-          <div className='cursor-pointer w-full sm:w-1/2 m-5 bg-[url("/images/image-graphic-design.jpg")] bg-no-repeat bg-cover rounded-xl flex'>
+          <div className='cursor-pointer w-full md:w-1/2 m-5 bg-[url("/images/image-graphic-design.jpg")] bg-no-repeat bg-cover rounded-xl flex'>
               <div className='w-fit h-fit m-auto text-white text-center'>
                 <h1 className='text-5xl tracking-[2px]'>GRAPHIC DESIGN</h1>
                 <p className='text-1xl tracking-[5px]'>VIEW PROJECTS</p>
