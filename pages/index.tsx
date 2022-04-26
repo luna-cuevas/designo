@@ -7,10 +7,6 @@ import AboutUs from '../components/Homepage/AboutUs'
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Hero />
       <Services />
       <AboutUs />
