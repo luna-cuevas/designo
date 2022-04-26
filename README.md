@@ -13,7 +13,7 @@
 
 ### Screenshot
 
-![](/images/designo.png)
+![](./public/images/designo.png)
 
 ### Links
 
