@@ -1,14 +1,15 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
   return (
     <div className='bg-[#1D1C1E] text-white pt-20 pb-20'>
       <div className='flex flex-col sm:flex-row justify-between sm:w-3/4 m-auto pb-10 border-b-2 border-b-slate-600'>
-        <img className='w-72 sm:w-52 mb-10 sm:mb-auto m-auto' src="/images/logo-light.png" alt="Designo" />
+        <Link href="/"><img className='w-72 sm:w-52 mb-10 sm:mb-auto m-auto' src="/images/logo-light.png" alt="Designo" /></Link>  
         <div className='flex flex-col sm:flex-row m-auto text-center justify-between w-4/12'>
-          <a className='my-4' href="">OUR COMPANY</a>
-          <a className='my-4' href="">LOCATIONS</a>
-          <a className='my-4' href="">CONTACT</a>
+          <Link className='my-4' href="/about">OUR COMPANY</Link>
+          <Link className='my-4' href="/locations">LOCATIONS</Link>
+          <Link className='my-4' href="/contact">CONTACT</Link>
         </div>
       </div>
 
